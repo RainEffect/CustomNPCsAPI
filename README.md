@@ -1,14 +1,19 @@
-# CustomNPCsAPI
-Work in progress, is used by scripting and mods who want to hook into CustomNPCs 1.8.9 or higher
+# CustomNPCsAPI-zh_CN
+# 自定义NPCs API 中文简体
 
-## Howto use in a Mod
-Basically just download the api code and include it in your mod. 
 
-In your mod you can check if customnpcs is installed with `NpcAPI.IsAvailable()` 
+## 说明
+汉化持续进行中,仅汉化最新版本的API内容，部分内容向下兼容至1.8.9版本
 
-To use the events, register your events with `NpcAPI.Instance().events().register(youreventclass)`
+## 更多链接
+本文档地址: http://cnpc.doc.mc404.cn/
 
-## Extra
-JavaDocs go to http://www.kodevelopment.nl/customnpcs/api/
-Discord for CustomNpcs Scripting/API go to https://discord.gg/2jZm88M
-Discord for my mods in general go to https://discord.gg/0qZ6X3cHl8Pupttr
+自定义NPCs脚本中文论坛: http://bbs.mcnpc.cn/
+
+我们的交流Q群: 1022010897
+
+原英文JavaDoc文档: http://www.kodevelopment.nl/customnpcs/api/
+
+自定义NPCs脚本的Discord群组: https://discord.gg/2jZm88M
+
+作者个人的Discord群组 https://discord.gg/0qZ6X3cHl8Pupttr
