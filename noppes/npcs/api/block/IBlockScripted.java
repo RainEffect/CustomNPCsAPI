@@ -18,12 +18,12 @@ public interface IBlockScripted extends IBlock{
 	public void setModel(String name);
 
 	/**
-	 * 返回当前方块的模型所对应的物品堆
+	 * 获取当前方块的模型所对应的物品堆
 	 */
 	public IItemStack getModel();
 	
 	/**
-	 * 返回当前方块的计时器组
+	 * 获取当前方块的计时器组
 	 */
 	public ITimers getTimers();
 
@@ -34,7 +34,7 @@ public interface IBlockScripted extends IBlock{
 	public void setRedstonePower(int strength);
 
 	/**
-	 * 返回当前方块发出的红石信号强度
+	 * 获取当前方块发出的红石信号强度
 	 * @return 红石信号强度（0-15）
 	 */
 	public int getRedstonePower();
@@ -45,7 +45,7 @@ public interface IBlockScripted extends IBlock{
 	public void setIsLadder(boolean enabled);
 
 	/**
-	 * 返回当前方块可否被攀爬
+	 * 获取当前方块可否被攀爬
 	 */
 	public boolean getIsLadder();
 
@@ -56,7 +56,7 @@ public interface IBlockScripted extends IBlock{
 	public void setLight(int value);
 
 	/**
-	 * 返回当前方块发出的亮度强度
+	 * 获取当前方块发出的亮度强度
 	 * @return 亮度强度（0-15）
 	 */
 	public int getLight();
@@ -70,17 +70,17 @@ public interface IBlockScripted extends IBlock{
 	public void setScale(float x, float y, float z);
 
 	/**
-	 * 返回当前方块的X轴缩放规模
+	 * 获取当前方块的X轴缩放规模
 	 */
 	public float getScaleX();
 
 	/**
-	 * 返回当前方块的Y轴缩放规模
+	 * 获取当前方块的Y轴缩放规模
 	 */
 	public float getScaleY();
 
 	/**
-	 * 返回当前方块的Z轴缩放规模
+	 * 获取当前方块的Z轴缩放规模
 	 */
 	public float getScaleZ();
 
@@ -93,17 +93,17 @@ public interface IBlockScripted extends IBlock{
 	public void setRotation(int x, int y, int z);
 
 	/**
-	 * 返回当前方块的X轴旋转角度
+	 * 获取当前方块的X轴旋转角度
 	 */
 	public int getRotationX();
 
 	/**
-	 * 返回当前方块的Y轴旋转角度
+	 * 获取当前方块的Y轴旋转角度
 	 */
 	public int getRotationY();
 
 	/**
-	 * 返回当前方块的Z轴旋转角度
+	 * 获取当前方块的Z轴旋转角度
 	 */
 	public int getRotationZ();
 
@@ -120,7 +120,7 @@ public interface IBlockScripted extends IBlock{
 	public String executeCommand(String command);
 
 	/**
-	 * 返回当前方块可否被穿透
+	 * 获取当前方块可否被穿透
 	 */
 	public boolean getIsPassible();
 	
@@ -130,7 +130,7 @@ public interface IBlockScripted extends IBlock{
 	public void setIsPassible(boolean bo);
 	
 	/**
-	 * 返回当前方块的破坏硬度
+	 * 获取当前方块的破坏硬度
 	 * @return 破坏硬度（-1为无法破坏）
 	 */
 	public float getHardness();
@@ -142,7 +142,7 @@ public interface IBlockScripted extends IBlock{
 	public void setHardness(float hardness);
 	
 	/**
-	 * 返回当前方块的爆炸阻力（-1为无法炸毁）
+	 * 获取当前方块的爆炸阻力（-1为无法炸毁）
 	 */
 	public float getResistance();
 	

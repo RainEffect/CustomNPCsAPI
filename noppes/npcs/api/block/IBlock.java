@@ -12,108 +12,151 @@ import noppes.npcs.api.item.IItemStack;
 
 public interface IBlock {
 
+	/**
+	 * 返回当前方块的X轴位置
+	 */
 	public int getX();
-	
+
+	/**
+	 * 返回当前方块的Y轴位置
+	 */
 	public int getY();
-	
+
+	/**
+	 * 返回当前方块的Z轴位置
+	 */
 	public int getZ();
-	
+
+	/**
+	 * 返回当前方块的全局位置
+	 */
 	public IPos getPos();
 	
+	/**
+	 * 返回当前方块的附加值
+	 */
 	public int getMetadata();
 	
+	/**
+	 * 设置当前方块的附加值
+	 */
 	public void setMetadata(int i);
 	
 	/**
-	 * @return Returns this blocks name
+	 * 返回当前方块名
 	 */
 	public String getName();
 
 	/**
-	 * Removes this block
+	 * 将当前方块移除
 	 */
 	public void remove();
 	
 	/**
-	 * @return Returns whether or not this block has been replaced by another
+	 * 检查当前方块是否已被替换或移除
 	 */
 	public boolean isRemoved();
 	
+	/**
+	 * 检查当前方块是否为空气
+	 */
 	public boolean isAir();
 	
-	/*
-	 * @param name Sets the block to replace this one using the blocks name
-	 * @return Returns the new block
+	/**
+	 * 替换当前方块为指定方块（方块名方式）
+	 * @param name 需要替换的方块名
+	 * @return 替换后的新方块
 	 */
 	public IBlock setBlock(String name);
 
 	/**
-	 * @param block Sets the block to replace this one
-	 * @return Returns the new block
+	 * 替换当前方块为指定方块（方块组方式）
+	 * @param block 需要替换的方块
+	 * @return 替换后的新方块
 	 */
 	public IBlock setBlock(IBlock block);
 	
+	/**
+	 * 检查当前方块是否拥有TileEntity
+	 */
 	public boolean hasTileEntity();
 
 	/**
-	 * @return Returns whether it has items stored inside it (e.g. chests, droppers, hoppers, etc)
+	 * 检查当前方块是否为容器方块（例如箱子，投掷器，漏斗等）
 	 */
 	public boolean isContainer();
 	
+	/**
+	 * 返回当前方块的容器空间
+	 * @return 容器空间
+	 */
 	public IContainer getContainer();
 	
 	/**
-	 * Temp data stores anything but only untill it's reloaded. 
-	 * (works only for customnpcs blocks)
+	 * 临时数据可以存储任何内容，重新加载后将会被移除。
+	 * (仅适用于CustomNPCs的方块)
 	 */
 	public IData getTempdata();
 	
 	/**
-	 * Stored data persists through world restart. Unlike tempdata only Strings and Numbers can be saved 
-	 * (works only for blocks with TileEntities)
+	 * 储存数据通过全局方式存储，即使重启后也依然存在。
+	 * 与临时数据不同的是，它只能存储字符串和数字。
+	 * (仅适用于具有TileEntities的方块)
 	 */
 	public IData getStoreddata();
 		
+	/**
+	 * 获取当前方块的世界
+	 */
 	public IWorld getWorld();
-	
 
+	/**
+	 * 获取当前方块TileEntity的NBT数据
+	 */
 	public INbt getTileEntityNBT();
 
+	/**
+	 * 设置当前方块TileEntity的NBT数据
+	 */
 	public void setTileEntityNBT(INbt nbt);
 	
 	/**
-	 * Expert users only
-	 * @return Returns minecrafts tilentity
+	 * 仅用于输出
+	 * @return MineCraft的TileEntity
 	 */
 	public TileEntity getMCTileEntity();
 	
 	/**
-	 * Expert users only
-	 * @return Returns minecrafts block
+	 * 仅用于输出
+	 * @return MineCraft的方块数据
 	 */
 	public Block getMCBlock();
 
 	/**
-	 * @param type Event type
-	 * @param data Event data
-	 * Example: 
-	 * 	Chests - type:1 data:1 opens the lid, type:1 data:0 closes the lid
-	 * 	Note block - type:(0-9) data:(0-24) plays different notes
+	 * 设置方块的事件类型/数据
+	 * @param type 事件类型
+	 * @param data 事件数据<br>
+	 * 例如: <br>
+	 * | 箱子 - type:1 data:1 打开盖子, type:1 data:0 合上盖子<br>
+	 * | 音符盒 - type:(0-9) data:(0-24) 播放不同的音色
 	 * 
 	 */
 	public void blockEvent(int type, int data);
 
+	/**
+	 * 获取当前方块的显示名
+	 */
 	public String getDisplayName();
 
 	/**
-	 * Expert users only
-	 * @return Returns minecrafts iblockstate
+	 * 仅用于输出
+	 * @return MineCraft的方块状态
 	 */
 	public IBlockState getMCBlockState();
 
 	/**
-	 * Simulates a player interacting with this block (can give weird results)
-	 * @param side The side of the block interacted with
+	 * 模拟玩家与当前方块进行交互 (可能出现奇怪的结果)
+	 * @param side 方块的方向面
 	 */
 	public void interact(int side);
 }
