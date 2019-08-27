@@ -153,32 +153,32 @@ public interface IBlockScripted extends IBlock{
 	public void setResistance(float resistance);
 
 	/**
-	 * 获取当前方块的悬浮字对象
+	 * 获取当前方块的悬浮字对象层
 	 */
 	public ITextPlane getTextPlane();
 
 	/**
-	 * 获取当前方块的悬浮字对象
+	 * 获取当前方块的悬浮字对象层
 	 */
 	public ITextPlane getTextPlane2();
 
 	/**
-	 * 获取当前方块的悬浮字对象
+	 * 获取当前方块的悬浮字对象层
 	 */
 	public ITextPlane getTextPlane3();
 
 	/**
-	 * 获取当前方块的悬浮字对象
+	 * 获取当前方块的悬浮字对象层
 	 */
 	public ITextPlane getTextPlane4();
 
 	/**
-	 * 获取当前方块的悬浮字对象
+	 * 获取当前方块的悬浮字对象层
 	 */
 	public ITextPlane getTextPlane5();
 
 	/**
-	 * 获取当前方块的悬浮字对象
+	 * 获取当前方块的悬浮字对象层
 	 */
 	public ITextPlane getTextPlane6();
 
