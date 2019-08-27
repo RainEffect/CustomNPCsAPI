@@ -142,47 +142,65 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <tr class="altColor" id="i0">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockModel()">getBlockModel</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">获取当前脚本门的模型所对应的物品名</div>
+</td>
 </tr>
 <tr class="rowColor" id="i1">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHardness()">getHardness</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">获取当前脚本门的破坏硬度</div>
+</td>
 </tr>
 <tr class="altColor" id="i2">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOpen()">getOpen</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">获取当前脚本门的开启状态</div>
+</td>
 </tr>
 <tr class="rowColor" id="i3">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getResistance()">getResistance</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">获取当前脚本门的爆炸阻力（-1为无法炸毁）</div>
+</td>
 </tr>
 <tr class="altColor" id="i4">
 <td class="colFirst"><code><a href="../ITimers.html" title="noppes.npcs.api中的接口">ITimers</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTimers()">getTimers</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">获取当前脚本门的计时器组</div>
+</td>
 </tr>
 <tr class="rowColor" id="i5">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBlockModel(java.lang.String)">setBlockModel</a></span>&#8203;(java.lang.String&nbsp;name)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">设置当前脚本门的模型（物品名方式）</div>
+</td>
 </tr>
 <tr class="altColor" id="i6">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHardness(float)">setHardness</a></span>&#8203;(float&nbsp;hardness)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">设置当前脚本门的破坏硬度</div>
+</td>
 </tr>
 <tr class="rowColor" id="i7">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOpen(boolean)">setOpen</a></span>&#8203;(boolean&nbsp;open)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">设置当前脚本门的开启状态</div>
+</td>
 </tr>
 <tr class="altColor" id="i8">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setResistance(float)">setResistance</a></span>&#8203;(float&nbsp;resistance)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">设置当前脚本门的爆炸阻力</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -218,6 +236,7 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <li class="blockList">
 <h4>getTimers</h4>
 <pre class="methodSignature"><a href="../ITimers.html" title="noppes.npcs.api中的接口">ITimers</a>&nbsp;getTimers()</pre>
+<div class="block">获取当前脚本门的计时器组</div>
 </li>
 </ul>
 <a id="getOpen()">
@@ -227,6 +246,7 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <li class="blockList">
 <h4>getOpen</h4>
 <pre class="methodSignature">boolean&nbsp;getOpen()</pre>
+<div class="block">获取当前脚本门的开启状态</div>
 </li>
 </ul>
 <a id="setOpen(boolean)">
@@ -236,6 +256,7 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <li class="blockList">
 <h4>setOpen</h4>
 <pre class="methodSignature">void&nbsp;setOpen&#8203;(boolean&nbsp;open)</pre>
+<div class="block">设置当前脚本门的开启状态</div>
 </li>
 </ul>
 <a id="setBlockModel(java.lang.String)">
@@ -245,9 +266,10 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <li class="blockList">
 <h4>setBlockModel</h4>
 <pre class="methodSignature">void&nbsp;setBlockModel&#8203;(java.lang.String&nbsp;name)</pre>
+<div class="block">设置当前脚本门的模型（物品名方式）</div>
 <dl>
 <dt><span class="paramLabel">参数:</span></dt>
-<dd><code>name</code> - The items name for the blocks model to be set</dd>
+<dd><code>name</code> - 物品名</dd>
 </dl>
 </li>
 </ul>
@@ -258,6 +280,7 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <li class="blockList">
 <h4>getBlockModel</h4>
 <pre class="methodSignature">java.lang.String&nbsp;getBlockModel()</pre>
+<div class="block">获取当前脚本门的模型所对应的物品名</div>
 </li>
 </ul>
 <a id="getHardness()">
@@ -267,9 +290,10 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <li class="blockList">
 <h4>getHardness</h4>
 <pre class="methodSignature">float&nbsp;getHardness()</pre>
+<div class="block">获取当前脚本门的破坏硬度</div>
 <dl>
 <dt><span class="returnLabel">返回:</span></dt>
-<dd>Harvesting hardness (-1 makes it unharvestable)</dd>
+<dd>破坏硬度（-1为无法破坏）</dd>
 </dl>
 </li>
 </ul>
@@ -280,6 +304,11 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <li class="blockList">
 <h4>setHardness</h4>
 <pre class="methodSignature">void&nbsp;setHardness&#8203;(float&nbsp;hardness)</pre>
+<div class="block">设置当前脚本门的破坏硬度</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>hardness</code> - 破坏硬度（-1为无法破坏）</dd>
+</dl>
 </li>
 </ul>
 <a id="getResistance()">
@@ -289,10 +318,7 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <li class="blockList">
 <h4>getResistance</h4>
 <pre class="methodSignature">float&nbsp;getResistance()</pre>
-<dl>
-<dt><span class="returnLabel">返回:</span></dt>
-<dd>Explosion resistance (-1 makes it unexplodable)</dd>
-</dl>
+<div class="block">获取当前脚本门的爆炸阻力（-1为无法炸毁）</div>
 </li>
 </ul>
 <a id="setResistance(float)">
@@ -302,6 +328,11 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <li class="blockList">
 <h4>setResistance</h4>
 <pre class="methodSignature">void&nbsp;setResistance&#8203;(float&nbsp;resistance)</pre>
+<div class="block">设置当前脚本门的爆炸阻力</div>
+<dl>
+<dt><span class="paramLabel">参数:</span></dt>
+<dd><code>resistance</code> - 爆炸阻力（-1为无法炸毁）</dd>
+</dl>
 </li>
 </ul>
 </li>

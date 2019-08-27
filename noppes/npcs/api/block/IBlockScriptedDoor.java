@@ -4,31 +4,53 @@ import noppes.npcs.api.ITimers;
 
 public interface IBlockScriptedDoor extends IBlock{
 	
+	/**
+	 * 获取当前脚本门的计时器组
+	 */
 	public ITimers getTimers();
 
+	/**
+	 * 获取当前脚本门的开启状态
+	 */
 	public boolean getOpen();
 
+	/**
+	 * 设置当前脚本门的开启状态
+	 */
 	public void setOpen(boolean open);
 
 	/**
-	 * @param name The items name for the blocks model to be set
+	 * 设置当前脚本门的模型（物品名方式）
+	 * @param name 物品名
 	 */
 	public void setBlockModel(String name);
 
+	/**
+	 * 获取当前脚本门的模型所对应的物品名
+	 */
 	public String getBlockModel();
 	
 	/**
-	 * @return Harvesting hardness (-1 makes it unharvestable)
+	 * 获取当前脚本门的破坏硬度
+	 * @return 破坏硬度（-1为无法破坏）
 	 */
 	public float getHardness();
 	
+	/**
+	 * 设置当前脚本门的破坏硬度
+	 * @param hardness 破坏硬度（-1为无法破坏）
+	 */
 	public void setHardness(float hardness);
 	
 	/**
-	 * @return Explosion resistance (-1 makes it unexplodable)
+	 * 获取当前脚本门的爆炸阻力（-1为无法炸毁）
 	 */
 	public float getResistance();
 	
+	/**
+	 * 设置当前脚本门的爆炸阻力
+	 * @param resistance 爆炸阻力（-1为无法炸毁）
+	 */
 	public void setResistance(float resistance);
 
 }
