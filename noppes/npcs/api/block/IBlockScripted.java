@@ -62,7 +62,7 @@ public interface IBlockScripted extends IBlock{
 	public int getLight();
 
 	/**
-	 * 设置当前方块的缩放规模
+	 * 设置当前方块的缩放比例
 	 * @param x X轴缩放（0-10）
 	 * @param y Y轴缩放（0-10）
 	 * @param z Z轴缩放（0-10）
@@ -70,17 +70,17 @@ public interface IBlockScripted extends IBlock{
 	public void setScale(float x, float y, float z);
 
 	/**
-	 * 获取当前方块的X轴缩放规模
+	 * 获取当前方块的X轴缩放比例
 	 */
 	public float getScaleX();
 
 	/**
-	 * 获取当前方块的Y轴缩放规模
+	 * 获取当前方块的Y轴缩放比例
 	 */
 	public float getScaleY();
 
 	/**
-	 * 获取当前方块的Z轴缩放规模
+	 * 获取当前方块的Z轴缩放比例
 	 */
 	public float getScaleZ();
 
