@@ -10,6 +10,9 @@ import noppes.npcs.api.IWorld;
 import noppes.npcs.api.entity.data.IData;
 import noppes.npcs.api.item.IItemStack;
 
+/**
+ * 用于操作在世界内的方块对象
+ */
 public interface IBlock {
 
 	/**

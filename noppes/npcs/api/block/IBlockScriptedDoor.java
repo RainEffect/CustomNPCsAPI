@@ -2,6 +2,9 @@ package noppes.npcs.api.block;
 
 import noppes.npcs.api.ITimers;
 
+/**
+ * 用于操作在世界内的脚本门对象
+ */
 public interface IBlockScriptedDoor extends IBlock{
 	
 	/**

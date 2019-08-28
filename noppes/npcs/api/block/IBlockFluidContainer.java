@@ -1,7 +1,7 @@
 package noppes.npcs.api.block;
 
 /**
- * Used for certain technical mods which use FluidContainer blocks *
+ * 用于操作在世界内的液体容器方块对象
  */
 public interface IBlockFluidContainer extends IBlock{
 

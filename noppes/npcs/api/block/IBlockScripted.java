@@ -3,6 +3,9 @@ package noppes.npcs.api.block;
 import noppes.npcs.api.ITimers;
 import noppes.npcs.api.item.IItemStack;
 
+/**
+ * 用于操作在世界内的脚本块对象
+ */
 public interface IBlockScripted extends IBlock{
 
 	/**

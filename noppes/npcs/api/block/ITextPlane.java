@@ -1,5 +1,8 @@
 package noppes.npcs.api.block;
 
+/**
+ * 用于操作在世界内的脚本块悬浮字对象
+ */
 public interface ITextPlane {
 
 	/**
