@@ -116,7 +116,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public interface <span class="typeNameLabel">IBlockFluidContainer</span>
 extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</a></pre>
-<div class="block">用于操作在世界内的液体容器方块对象</div>
+<div class="block">用于操作在世界内的流体容器方块对象<br>（尚未进行确定测试，此处翻译可能有误）</div>
 </li>
 </ul>
 </div>
@@ -143,27 +143,37 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <tr class="altColor" id="i0">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFluidName()">getFluidName</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">返回当前流体容器方块的流体名</div>
+</td>
 </tr>
 <tr class="rowColor" id="i1">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFluidPercentage()">getFluidPercentage</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">返回当前流体容器方块的已存储流体储量百分比</div>
+</td>
 </tr>
 <tr class="altColor" id="i2">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFluidValue()">getFluidValue</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">返回当前流体容器方块的流体储量</div>
+</td>
 </tr>
 <tr class="rowColor" id="i3">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFuildDensity()">getFuildDensity</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">返回当前流体容器方块的流体密度</div>
+</td>
 </tr>
 <tr class="altColor" id="i4">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFuildTemperature()">getFuildTemperature</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">返回当前流体容器方块的流体温度</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -199,6 +209,7 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <li class="blockList">
 <h4>getFluidPercentage</h4>
 <pre class="methodSignature">float&nbsp;getFluidPercentage()</pre>
+<div class="block">返回当前流体容器方块的已存储流体储量百分比</div>
 </li>
 </ul>
 <a id="getFuildDensity()">
@@ -208,6 +219,7 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <li class="blockList">
 <h4>getFuildDensity</h4>
 <pre class="methodSignature">float&nbsp;getFuildDensity()</pre>
+<div class="block">返回当前流体容器方块的流体密度</div>
 </li>
 </ul>
 <a id="getFuildTemperature()">
@@ -217,6 +229,7 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <li class="blockList">
 <h4>getFuildTemperature</h4>
 <pre class="methodSignature">float&nbsp;getFuildTemperature()</pre>
+<div class="block">返回当前流体容器方块的流体温度</div>
 </li>
 </ul>
 <a id="getFluidValue()">
@@ -226,6 +239,7 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <li class="blockList">
 <h4>getFluidValue</h4>
 <pre class="methodSignature">float&nbsp;getFluidValue()</pre>
+<div class="block">返回当前流体容器方块的流体储量</div>
 </li>
 </ul>
 <a id="getFluidName()">
@@ -235,6 +249,7 @@ extends <a href="IBlock.html" title="noppes.npcs.api.block中的接口">IBlock</
 <li class="blockList">
 <h4>getFluidName</h4>
 <pre class="methodSignature">java.lang.String&nbsp;getFluidName()</pre>
+<div class="block">返回当前流体容器方块的流体名</div>
 </li>
 </ul>
 </li>
